@@ -147,7 +147,18 @@ var zoo = {
                     console.log("Sorry, didn't get that, come again?")
                   };
                 });
-              }
+              },
+
+  exit : function () {
+            console.log("Thank you for visiting us, good bye~!");
+            process.exit();
+          },
+
+  open : function () {
+    this.welcome();
+    this.menu();
+    this.promptUser();
+  }
 
 }
 
